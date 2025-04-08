@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Universal Notepad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button class="btn" data-action="bold"><i class="fas fa-bold"></i></button>
+            <button class="btn" data-action="italic"><i class="fas fa-italic"></i></button>
+            <select class="font-size">
+                <option value="14">Small</option>
+                <option value="16" selected>Medium</option>
+                <option value="20">Large</option>
+                <option value="24">Huge</option>
+            </select>
+            <input type="color" class="color-picker">
+            <button class="btn" data-action="copy"><i class="far fa-copy"></i></button>
+            <button class="btn" data-action="paste"><i class="fas fa-paste"></i></button>
+            <button class="btn" data-action="print"><i class="fas fa-print"></i></button>
+            <button class="btn save-btn" data-action="save"><i class="fas fa-save"></i></button>
+            <button class="btn fullscreen-btn" data-action="fullscreen"><i class="fas fa-expand"></i></button>
+        </div>
+        <div class="editor" contenteditable="true"></div>
+    </div>
+
+    <div class="mobile-keyboard-hint">Tap here to start typing...</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
